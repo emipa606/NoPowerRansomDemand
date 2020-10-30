@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SignalFire"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="BuildingBase">
+          <defName>TradeMarker</defName>
+          <label>trade marker</label>
+          <thingClass>Building_OrbitalTradeBeacon</thingClass>
+          <graphicData>
+            <texPath>trade_markers/trademarker</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+          </graphicData>
+          <altitudeLayer>Building</altitudeLayer>
+          <statBases>
+            <MaxHitPoints>75</MaxHitPoints>
+            <WorkToBuild>1300</WorkToBuild>
+            <Mass>15</Mass>
+            <Flammability>1.0</Flammability>
+          </statBases>
+          <description>Required for trading. You can only sell goods that are near an trade goods marker. Can be placed indoors.\n\nTrade markers function as a torch, produce light and heat, require fuel (wood).</description>
+          <drawerType>MapMeshAndRealTime</drawerType>
+          <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+          <fillPercent>0.3</fillPercent>
+          <costList>
+            <Steel>20</Steel>
+          </costList>
+          <stuffCategories>
+            <li>Metallic</li>
+            <li>Stony</li>
+            <li>Woody</li>
+          </stuffCategories>
+          <costStuffCount>30</costStuffCount>
+          <comps>
+            <li Class="CompProperties_Refuelable">
+              <fuelConsumptionRate>2.2</fuelConsumptionRate>
+              <fuelCapacity>30.0</fuelCapacity>
+              <fuelFilter>
+                <thingDefs>
+                  <li>WoodLog</li>
+                </thingDefs>
+              </fuelFilter>
+              <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+            </li>
+            <li Class="CompProperties_Glower">
+              <glowRadius>10</glowRadius>
+              <glowColor>(252,187,113,0)</glowColor>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+              <heatPerSecond>3.5</heatPerSecond>
+              <heatPushMaxTemperature>23</heatPushMaxTemperature>
+            </li>
+            <li Class="CompProperties_FireOverlay">
+              <fireSize>0.5</fireSize>
+              <offset>(0,0,0.2)</offset>
+            </li>
+          </comps>
+          <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+          <pathCost>50</pathCost>
+          <designationCategory>Misc</designationCategory>
+          <rotatable>true</rotatable>
+          <placeWorkers>
+            <li>PlaceWorker_ShowTradeBeaconRadius</li>
+          </placeWorkers>
+          <castEdgeShadows>true</castEdgeShadows>
+          <minifiedDef>MinifiedThing</minifiedDef>
+          <uiIconPath>trademarker_menuicon</uiIconPath>
+          <building>
+            <ai_chillDestination>false</ai_chillDestination>
+          </building>
+          <thingCategories>
+            <li>BuildingsMisc</li>
+          </thingCategories>
+          <tickerType>Normal</tickerType>
+        </ThingDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

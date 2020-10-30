@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Tribal ransom -->
+  <!-- EN: Ransom demand at {0} -->
+  <TribalDemandTitle>Ransom demand at {0}</TribalDemandTitle>
+  <!-- EN: {1} contacts you on radio. They are holding former colonist {PAWN_labelShort} for ransom.\n\nThey're willing to release {PAWN_objective} back to you in exchange for {2} silver. -->
+  <TribalDemandPigeon> {1} have just sent a pigeon. They inform you that they are holding former colonist {PAWN_labelShort} for ransom.\n\nThey're willing to release {PAWN_objective} back to you in exchange for {2} silver.</TribalDemandPigeon>
+  <TribalDemandSignalfire>You see smoke-signals coming from {1}. They say that you that they are holding former colonist {PAWN_labelShort} for ransom.\n\nThey're willing to release {PAWN_objective} back to you in exchange for {2} silver.</TribalDemandSignalfire>
+
+</LanguageData>
