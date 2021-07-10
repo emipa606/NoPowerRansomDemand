@@ -1,17 +1,14 @@
-﻿using System;
+﻿using HarmonyLib;
 using RimWorld;
-using HarmonyLib;
 using Verse;
 
 namespace TribalRansom
 {
-
     public static class HarmonyPatches
     {
+        public static bool IsCheckingForRansom;
 
-        public static bool IsCheckingForRansom = false;
-
-        [HarmonyPatch(typeof(IncidentWorker_RansomDemand), "CanFireNowSub", new Type[] { typeof(IncidentParms) })]
+        [HarmonyPatch(typeof(IncidentWorker_RansomDemand), "CanFireNowSub", typeof(IncidentParms))]
         public static class CanFireNowSub_Patch
         {
             public static void Prefix()
@@ -25,7 +22,7 @@ namespace TribalRansom
             }
         }
 
-        [HarmonyPatch(typeof(CommsConsoleUtility), "PlayerHasPoweredCommsConsole", new Type[] { typeof(Map) })]
+        [HarmonyPatch(typeof(CommsConsoleUtility), "PlayerHasPoweredCommsConsole", typeof(Map))]
         public static class PlayerHasPoweredCommsConsole_Patch
         {
             public static void Postfix(Map map, ref bool __result)
@@ -37,7 +34,7 @@ namespace TribalRansom
             }
         }
 
-        [HarmonyPatch(typeof(LetterStack), "ReceiveLetter", new Type[] { typeof(Letter), typeof(string) })]
+        [HarmonyPatch(typeof(LetterStack), "ReceiveLetter", typeof(Letter), typeof(string))]
         public static class ReceiveLetter_Patch
         {
             public static void Prefix(ref Letter let)
@@ -46,24 +43,33 @@ namespace TribalRansom
                 {
                     return;
                 }
-                var letter = (ChoiceLetter_RansomDemand)let;
-                if (!TribalRansom.PlayerHasPoweredCommsConsole(letter.map, out ThingDef type) || type == null)
+
+                var letter = (ChoiceLetter_RansomDemand) let;
+                if (!TribalRansom.PlayerHasPoweredCommsConsole(letter.map, out var type) || type == null)
                 {
                     return;
                 }
-                letter.title = TranslatorFormattedStringExtensions.Translate("TribalDemandTitle", letter.map.Parent.Label);
+
+                letter.title = "TribalDemandTitle".Translate(letter.map.Parent.Label);
                 letter.radioMode = false;
                 if (type.defName == "BirdPostMessageTable")
                 {
-                    letter.text = GenText.AdjustedFor(TranslatorFormattedStringExtensions.Translate("TribalDemandPigeon", letter.kidnapped.LabelShort, letter.faction.Name, letter.fee, letter.kidnapped.Named("PAWN")), letter.kidnapped, "PAWN");
+                    letter.text =
+                        GenText.AdjustedFor(
+                            "TribalDemandPigeon".Translate(letter.kidnapped.LabelShort, letter.faction.Name, letter.fee,
+                                letter.kidnapped.Named("PAWN")), letter.kidnapped);
                 }
+
                 if (type.defName == "SignalFire")
                 {
-                    letter.text = GenText.AdjustedFor(TranslatorFormattedStringExtensions.Translate("TribalDemandSignalfire", letter.kidnapped.LabelShort, letter.faction.Name, letter.fee, letter.kidnapped.Named("PAWN")), letter.kidnapped, "PAWN");
+                    letter.text =
+                        GenText.AdjustedFor(
+                            "TribalDemandSignalfire".Translate(letter.kidnapped.LabelShort, letter.faction.Name,
+                                letter.fee, letter.kidnapped.Named("PAWN")), letter.kidnapped);
                 }
+
                 let = letter;
             }
         }
     }
-
 }

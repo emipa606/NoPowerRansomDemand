@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>No Power Ransom Demand (Continued)</name>
   <packageId>Mlie.NoPowerRansomDemand</packageId>
@@ -7,6 +7,7 @@
   <supportedVersions>
     <li>1.1</li>
     <li>1.2</li>
+    <li>1.3</li>
   </supportedVersions>
   <modDependencies>
     <li>
@@ -43,7 +44,19 @@ to work.
 [/table]
 	
 [img]https://i.imgur.com/NOW7jU1.png[/img]
-The vanilla 'ransom demand' event requires the comms console. 'No Power Ransom Demand' makes the ransom offer possible with the no power comms console mod.
+The vanilla &apos;ransom demand&apos; event requires the comms console. &apos;No Power Ransom Demand&apos; makes the ransom offer possible with the no power comms console mod.
 
-orignal mod required: [sd] nopower comms console, from sulusdascor</description>
+orignal mod required: [sd] nopower comms console, from sulusdascor
+
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
 </ModMetaData>
+
