@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>No Power Ransom Demand (Continued)</name>
   <packageId>Mlie.NoPowerRansomDemand</packageId>
@@ -22,7 +22,7 @@
     <li>sulusdacor.meltup.nopowercommssimplified</li>
     <li>mlie.tribalsignalfire</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of newcolonists mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1830519147
 
@@ -34,21 +34,25 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1830519147
 [/list]
 to work.
 
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+[img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
     [tr]
         [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
         [td][url=https://github.com/emipa606/NoPowerRansomDemand][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
     [/tr]
+    [tr]
+        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
+        [td][img]https://i.imgur.com/Be8E2qJ.png[/img][/td]
+    [/tr]
 [/table]
 	
-[img]https://i.imgur.com/NOW7jU1.png[/img]
-The vanilla &apos;ransom demand&apos; event requires the comms console. &apos;No Power Ransom Demand&apos; makes the ransom offer possible with the no power comms console mod.
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
+The vanilla 'ransom demand' event requires the comms console. 'No Power Ransom Demand' makes the ransom offer possible with the no power comms console mod.
 
 orignal mod required: [sd] nopower comms console, from sulusdascor
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -59,4 +63,3 @@ orignal mod required: [sd] nopower comms console, from sulusdascor
 [/list]
 </description>
 </ModMetaData>
-
