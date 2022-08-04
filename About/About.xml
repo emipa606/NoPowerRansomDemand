@@ -20,6 +20,7 @@
   <loadAfter>
     <li>brrainz.harmony</li>
     <li>sulusdacor.meltup.nopowercommssimplified</li>
+    <li>DankPyon.Medieval.Overhaul</li>
     <li>mlie.tribalsignalfire</li>
   </loadAfter>
   <description>[img]https://i.imgur.com/buuPQel.png[/img]
@@ -61,5 +62,6 @@ orignal mod required: [sd] nopower comms console, from sulusdascor
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [/list]
+
 </description>
 </ModMetaData>

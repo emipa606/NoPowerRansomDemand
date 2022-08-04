@@ -1,6 +1,6 @@
 # NoPowerRansomDemand
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of newcolonists mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1830519147
@@ -15,16 +15,16 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1830519147
 
 to work.
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
-The vanilla &apos;ransom demand&apos; event requires the comms console. &apos;No Power Ransom Demand&apos; makes the ransom offer possible with the no power comms console mod.
+The vanilla 'ransom demand' event requires the comms console. 'No Power Ransom Demand' makes the ransom offer possible with the no power comms console mod.
 
 orignal mod required: [sd] nopower comms console, from sulusdascor
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
@@ -34,6 +34,7 @@ orignal mod required: [sd] nopower comms console, from sulusdascor
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 
 

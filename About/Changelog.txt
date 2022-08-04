@@ -1,5 +1,8 @@
 # Changelog for NoPowerRansomDemand
 
+1.3.1 - Now supports the scribe table from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067]https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067[/url]
+
+
 1.0.1.0 - Mod updated for 1.3 and passed autotests
 
 
