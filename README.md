@@ -11,6 +11,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1830519147
 
 - https://steamcommunity.com/sharedfiles/filedetails/?id=2019297016] Nopower Comms Simplified
 - https://steamcommunity.com/sharedfiles/filedetails/?id=2026582975] Tribal Signal Fire (Continued)
+- https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067] Medieval Overhaul
 
 
 to work.

@@ -24,13 +24,13 @@ public static class ReceiveLetter_Patch
         switch (type.defName)
         {
             case "BirdPostMessageTable" or "DankPyon_ScribeTable":
-                letter.text =
+                letter.Text =
                     GenText.AdjustedFor(
                         "TribalDemandPigeon".Translate(letter.kidnapped.LabelShort, letter.faction.Name, letter.fee,
                             letter.kidnapped.Named("PAWN")), letter.kidnapped);
                 break;
             case "SignalFire":
-                letter.text =
+                letter.Text =
                     GenText.AdjustedFor(
                         "TribalDemandSignalfire".Translate(letter.kidnapped.LabelShort, letter.faction.Name,
                             letter.fee, letter.kidnapped.Named("PAWN")), letter.kidnapped);
