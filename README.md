@@ -39,3 +39,4 @@ orignal mod required: [sd] nopower comms console, from sulusdascor
 
 
 
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2272309737]Last updated 2023-08-05

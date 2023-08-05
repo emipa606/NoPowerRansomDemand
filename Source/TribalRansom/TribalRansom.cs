@@ -32,7 +32,8 @@ public static class TribalRansom
         }
 
         medievalOverhaul =
-            ModLister.GetActiveModWithIdentifier("DankPyon.Medieval.Overhaul") != null;
+            ModLister.GetActiveModWithIdentifier("DankPyon.Medieval.Overhaul") != null ||
+            ModLister.GetActiveModWithIdentifier("Zaf.Medieval") != null;
         if (medievalOverhaul)
         {
             moBirdPostDef = DefDatabase<ThingDef>.GetNamedSilentFail("DankPyon_ScribeTable");

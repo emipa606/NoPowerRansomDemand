@@ -1,5 +1,8 @@
 # Changelog for NoPowerRansomDemand
 
+1.4.2 - Should now also work with the Lite version of Medieval Overhaul
+
+
 1.4.1 - Mod updated for 1.4 and passed autotests.
 Used DeepL to update translations for ChineseSimplified, French, German, Russian
 
