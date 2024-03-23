@@ -4,12 +4,12 @@ using Verse;
 
 namespace TribalRansom;
 
-[HarmonyPatch(typeof(LetterStack), "ReceiveLetter", typeof(Letter), typeof(string))]
+[HarmonyPatch(typeof(LetterStack), "ReceiveLetter", typeof(Letter), typeof(string), typeof(int), typeof(bool))]
 public static class ReceiveLetter_Patch
 {
     public static void Prefix(ref Letter let)
     {
-        if (!(let is ChoiceLetter_RansomDemand letter))
+        if (let is not ChoiceLetter_RansomDemand letter)
         {
             return;
         }
