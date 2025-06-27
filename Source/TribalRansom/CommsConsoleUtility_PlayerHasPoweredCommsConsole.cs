@@ -4,8 +4,8 @@ using Verse;
 
 namespace TribalRansom;
 
-[HarmonyPatch(typeof(CommsConsoleUtility), "PlayerHasPoweredCommsConsole", typeof(Map))]
-public static class PlayerHasPoweredCommsConsole_Patch
+[HarmonyPatch(typeof(CommsConsoleUtility), nameof(CommsConsoleUtility.PlayerHasPoweredCommsConsole), typeof(Map))]
+public static class CommsConsoleUtility_PlayerHasPoweredCommsConsole
 {
     public static void Postfix(Map map, ref bool __result)
     {

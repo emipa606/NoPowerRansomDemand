@@ -4,7 +4,8 @@ using Verse;
 
 namespace TribalRansom;
 
-[HarmonyPatch(typeof(LetterStack), "ReceiveLetter", typeof(Letter), typeof(string), typeof(int), typeof(bool))]
+[HarmonyPatch(typeof(LetterStack), nameof(LetterStack.ReceiveLetter), typeof(Letter), typeof(string), typeof(int),
+    typeof(bool))]
 public static class ReceiveLetter_Patch
 {
     public static void Prefix(ref Letter let)

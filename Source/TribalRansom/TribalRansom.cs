@@ -25,21 +25,20 @@ public static class TribalRansom
         var harmonyInstance = new Harmony("Mlie.TribalRansom");
         harmonyInstance.PatchAll();
         nopowercommssimplified =
-            ModLister.GetActiveModWithIdentifier("sulusdacor.meltup.nopowercommssimplified") != null;
+            ModLister.GetActiveModWithIdentifier("sulusdacor.meltup.nopowercommssimplified", true) != null;
         if (nopowercommssimplified)
         {
             birdPostDef = DefDatabase<ThingDef>.GetNamedSilentFail("BirdPostMessageTable");
         }
 
-        medievalOverhaul =
-            ModLister.GetActiveModWithIdentifier("DankPyon.Medieval.Overhaul") != null ||
-            ModLister.GetActiveModWithIdentifier("Zaf.Medieval") != null;
+        medievalOverhaul = ModLister.GetActiveModWithIdentifier("DankPyon.Medieval.Overhaul", true) != null ||
+                           ModLister.GetActiveModWithIdentifier("Zaf.Medieval", true) != null;
         if (medievalOverhaul)
         {
             moBirdPostDef = DefDatabase<ThingDef>.GetNamedSilentFail("DankPyon_ScribeTable");
         }
 
-        tribalsignalfire = ModLister.GetActiveModWithIdentifier("mlie.tribalsignalfire") != null;
+        tribalsignalfire = ModLister.GetActiveModWithIdentifier("mlie.tribalsignalfire", true) != null;
         if (tribalsignalfire)
         {
             signalFireDef = DefDatabase<ThingDef>.GetNamedSilentFail("SignalFire");
